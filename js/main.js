@@ -1,9 +1,11 @@
 'use strict'
 
 {
-	const prices = [180, 190, 200];
+	const str = 'hello';
+	// console.log(str.length);
 
-	const updatedPrices = prices.map(price => price + 20 );
+	//str.substring(開始位置、終了位置)；
+	// console.log(str.substring(2, 4));
 
-	console.log(updatedPrices);
+	console.log(str[1]);
 }
