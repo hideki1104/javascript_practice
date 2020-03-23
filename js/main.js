@@ -41,8 +41,18 @@
 
 	// console.log(Math.floor(Math.random() * 6 ) + 1);
 
-	const d = new Date();
-	// console.log(d);
+	// const d = new Date();
+	// // console.log(d);
 
-	console.log(`${d.getMonth() + 1} 月 ${d.getDate()} 日`);
+	// console.log(`${d.getMonth() + 1} 月 ${d.getDate()} 日`);
+
+	// alert('hello')
+
+	// const answer = confirm('削除しますか？');
+	// if (answer){
+	// 	console.log('削除しました');
+	// }else{
+	// 	console.log('キャンセルしました')
+	// }
+
 }
