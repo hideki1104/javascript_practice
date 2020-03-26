@@ -55,4 +55,65 @@
 	// 	console.log('キャンセルしました')
 	// }
 
+    //#24
+	// let i = 0;
+
+	// function showTime() {
+ //    console.log(new Date());
+ //    i++
+ //    if (i > 9){
+ //    	clearInterval(intervalId);
+ //    }
+	// }
+
+	// const intervalId = setInterval(showTime, 1000);
+
+	//#25
+	//メモ　3秒立つと返り値のclearTimeoutを返す
+	// let i = 0;
+
+	// function showTime(){
+	// 	console.log(new Date());
+	// 	const timeoutId = setTimeout(showTime, 1000);
+	// 	i++;
+	// 	if( i > 2 ){
+	// 		clearTimeout(timeoutId);
+	// 	}
+	// }
+
+	// showTime();
+
+	//#26
+	//setInterval()とsetTimeout()の違い
+
+	//#27
+	// const name = 'taguchi';
+	// const name = 5;
+
+ //    try{
+ //        console.log(name.toUpperCase());
+ //    }catch(e){
+ //    	console.log(e);
+ // //    }
+
+	// console.log('Finish');
+
+	//#28
+	{
+		const posts = [
+		{
+			text: "JavaScriptの勉強中",
+			likeCount: 0,
+		},
+		{
+			text: "プログラミング楽しい",
+			likeCount: 0,
+		},
+		];
+		function show(post){
+			console.log(`${post.text} - ${post.likeCount}いいね`);
+		}
+
+		show(posts[0]);
+	}
 }
