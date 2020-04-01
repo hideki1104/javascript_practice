@@ -98,22 +98,34 @@
 
 	// console.log('Finish');
 
-	//#28
-	{
-		const posts = [
-		{
-			text: "JavaScriptの勉強中",
-			likeCount: 0,
-		},
-		{
-			text: "プログラミング楽しい",
-			likeCount: 0,
-		},
-		];
-		function show(post){
-			console.log(`${post.text} - ${post.likeCount}いいね`);
-		}
+	//#28//#29
 
-		show(posts[0]);
-	}
+  class Post {
+    constructor(text) {
+      this.text = text;
+      this.likeCount = 0;
+    }
+
+    show() {
+      console.log(`${this.text} - ${this.likeCount}いいね`);
+    }
+
+    like(){
+    	this.likeCount++;
+    	this.show();
+    }
+
+    static showInfo(){
+    	console.log('Post class version 1.0');
+    }
+  }
+
+  const posts = [
+    new Post('JavaScriptの勉強中…'),
+    new Post('プログラミング楽しい！'),
+  ];
+
+  // posts[0].show();
+
+  Post.showInfo();
 }
